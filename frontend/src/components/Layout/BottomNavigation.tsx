@@ -29,7 +29,7 @@ export default function BottomNavigation({
           to={s.path}
           className={`flex-1 flex flex-col items-center justify-center py-4 transition-colors hover:bg-gray-100 dark:hover:bg-gray-700 ${
             location.pathname === s.path
-              ? "bg-gray-200 dark:bg-gray-700 font-semibold"
+              ? "bg-gray-300/80 dark:bg-gray-700 font-semibold"
               : ""
           }`}
         >
