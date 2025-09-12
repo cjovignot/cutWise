@@ -21,7 +21,7 @@ export default function Header({
       className={`flex items-center gap-2 p-4 md:py-3 w-full ${className}`}
     >
       {/* Colonne 1 : titre avec icône */}
-      <h2 className="items-center hidden col-span-3 text-xl font-bold md:flex">
+      <h2 className="items-center hidden col-span-3 text-xl font-bold md:flex md:w-full">
         {Icon && <Icon size={24} className="mr-2" />}
         {t(`${pageName}`)}
       </h2>
