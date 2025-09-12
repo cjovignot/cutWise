@@ -10,6 +10,7 @@ interface HeaderProps {
 export default function Header({ pageName, icon: Icon }: HeaderProps) {
   const { t } = useTranslation();
   const placeholder = t("search");
+  // test
 
   return (
     <header className="flex items-center justify-between w-full px-3 py-2 md:p-3">
