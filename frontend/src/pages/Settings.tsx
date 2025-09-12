@@ -244,7 +244,7 @@ export default function Settings({ user }: SettingsProps) {
     );
   };
 
-  // test
+  // test2
   return (
     <div className="p-0">
       <AvatarSettings />
