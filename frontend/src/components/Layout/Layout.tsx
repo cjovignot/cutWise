@@ -31,7 +31,7 @@ export default function Layout({ children }: LayoutProps) {
         </div>
 
         {/* Contenu scrollable sous le header */}
-        <main className="flex-1 overflow-y-auto p-4 mt-[56px] md:mt-[64px]">
+        <main className="flex-1 overflow-y-auto p-8 mt-[56px] md:mt-[64px]">
           {children}
         </main>
 

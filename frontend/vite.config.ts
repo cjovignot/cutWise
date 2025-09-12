@@ -2,6 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { VitePWA } from "vite-plugin-pwa";
+import { version } from "./package.json";
+import { execSync } from "child_process";
+
+const commitHash = execSync("git rev-parse --short HEAD").toString().trim();
 
 export default defineConfig({
   plugins: [
@@ -24,4 +28,8 @@ export default defineConfig({
       },
     }),
   ],
+  define: {
+    __APP_VERSION__: JSON.stringify(version),
+    __COMMIT_HASH__: JSON.stringify(commitHash),
+  },
 });

@@ -96,7 +96,7 @@ export default function Settings({ user }: SettingsProps) {
     };
 
     return (
-      <div className="mb-6">
+      <div className="mb-10">
         <h3 className="mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
           {t("avatar")}
         </h3>
@@ -146,7 +146,7 @@ export default function Settings({ user }: SettingsProps) {
 
   // Composant Thème
   const ThemeSettings = () => (
-    <div className="mb-4">
+    <div className="mb-10">
       <h3 className="mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
         {t("theme")}
       </h3>
@@ -168,11 +168,11 @@ export default function Settings({ user }: SettingsProps) {
 
   // Composant Couleur
   const ColorSettings = () => (
-    <div className="mb-4">
+    <div className="mb-10">
       <h3 className="mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
         {t("color")}
       </h3>
-      <div className="grid grid-cols-5 gap-5">
+      <div className="grid grid-cols-8 gap-1">
         {themes.map((t) => (
           <button
             key={t.id}
@@ -211,11 +211,11 @@ export default function Settings({ user }: SettingsProps) {
     ];
 
     return (
-      <div className="mb-4">
+      <div className="mb-10">
         <h3 className="mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
           {t("language")}
         </h3>
-        <div className="grid grid-cols-4 gap-7">
+        <div className="grid grid-cols-7 gap-1">
           {languages.map((lang) => (
             <ReactCountryFlag
               key={lang.code}

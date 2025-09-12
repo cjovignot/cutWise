@@ -18,7 +18,7 @@ export default function Header({
 
   return (
     <header
-      className={`flex items-center gap-2 px-4 py-2 md:py-3 w-full ${className}`}
+      className={`flex items-center gap-2 p-4 md:py-3 w-full ${className}`}
     >
       {/* Colonne 1 : titre avec icône */}
       <h2 className="items-center hidden col-span-3 text-xl font-bold md:flex">
@@ -31,17 +31,17 @@ export default function Header({
         <input
           type="text"
           placeholder={placeholder}
-          className="w-full md:w-96 h-8 px-3 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-[var(--theme-primary)]"
+          className="w-full md:w-96 h-10 px-3 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-[var(--theme-primary)]"
         />
       </div>
 
       {/* Colonne 4 : boutons */}
       <div className="flex items-center gap-0 md:gap-1 md:justify-end">
         <button className="p-2 transition-colors rounded hover:bg-gray-200 dark:hover:bg-gray-700">
-          <FaBell size={20} />
+          <FaBell size={25} />
         </button>
         <button className="p-2 transition-colors rounded hover:bg-gray-200 dark:hover:bg-gray-700">
-          <FaUserCircle size={24} />
+          <FaUserCircle size={29} />
         </button>
       </div>
     </header>
