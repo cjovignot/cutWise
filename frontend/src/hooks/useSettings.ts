@@ -8,7 +8,7 @@ export interface Theme {
 }
 
 export type ThemeMode = "light" | "dark";
-export type Language = "fr" | "en";
+export type Language = "fr" | "en" | "es" | "it";
 
 export interface Preferences {
   themeMode: ThemeMode;
@@ -32,18 +32,17 @@ export function useSettings(userId?: string) {
   );
   const [avatarUrl, setAvatarUrl] = useState<string>("");
 
-  // Charger les thèmes depuis un fichier local
+  // Charger les thèmes depuis themes.json
   useEffect(() => {
     fetch("/themes.json")
       .then((res) => res.json())
       .then((data: Theme[]) => setThemes(data))
       .catch(() => {
-        // fallback si themes.json n’existe pas
         setThemes([{ id: "blue", label: "Bleu", primary: "#3B82F6" }]);
       });
   }, []);
 
-  // Charger les préférences utilisateur depuis API si dispo
+  // Charger préférences depuis API si dispo
   useEffect(() => {
     if (!userId) return;
 
@@ -57,7 +56,7 @@ export function useSettings(userId?: string) {
         i18n.changeLanguage(prefs.language);
       })
       .catch(() => {
-        // fallback : utiliser localStorage
+        // fallback localStorage
         const savedMode = localStorage.getItem(
           "theme-mode"
         ) as ThemeMode | null;
@@ -73,19 +72,17 @@ export function useSettings(userId?: string) {
       });
   }, [userId, i18n]);
 
-  // Appliquer dark/light mode
+  // Appliquer dark/light mode dynamiquement
   useEffect(() => {
     const html = document.documentElement;
     if (mode === "dark") html.classList.add("dark");
     else html.classList.remove("dark");
 
-    // Sauvegarder le mode dans localStorage
     localStorage.setItem("theme-mode", mode);
-
     if (userId) updatePreferences();
   }, [mode, userId]);
 
-  // Appliquer couleur du thème
+  // Appliquer couleur dynamique
   useEffect(() => {
     const current = themes.find((t) => t.id === color);
     if (current) {
@@ -122,7 +119,7 @@ export function useSettings(userId?: string) {
         }),
       });
     } catch {
-      // si l'API n'est pas dispo, ignore
+      // API non dispo => ignore
     }
   };
 

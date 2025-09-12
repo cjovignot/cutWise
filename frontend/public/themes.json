@@ -1,0 +1,7 @@
+[
+  { "id": "ocean", "label": "Océan", "primary": "#1E3A8A" },
+  { "id": "sunset", "label": "Coucher de Soleil", "primary": "#F97316" },
+  { "id": "forest", "label": "Forêt", "primary": "#10B981" },
+  { "id": "lavender", "label": "Lavande", "primary": "#A78BFA" },
+  { "id": "rose", "label": "Rose", "primary": "#F43F5E" }
+]

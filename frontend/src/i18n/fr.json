@@ -5,5 +5,14 @@
   "users": "Utilisateurs",
   "projects": "Projets",
   "settings": "Paramètres",
-  "search": "Rechercher"
+  "search": "Rechercher",
+  "save": "Sauvegarder",
+  "avatar": "Avatar",
+  "chooseAvatar": "Choisir un Avatar",
+  "cancel": "Annuler",
+  "theme": "Thème",
+  "color": "Couleur",
+  "language": "Langue",
+  "light": "Clair",
+  "dark": "Sombre"
 }

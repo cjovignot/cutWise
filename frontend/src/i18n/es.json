@@ -1,0 +1,18 @@
+{
+  "dashboard": "Tablero",
+  "orders": "Pedidos",
+  "catalog": "Catálogo",
+  "users": "Usuarios",
+  "projects": "Proyectos",
+  "settings": "Configuración",
+  "search": "Buscar",
+  "save": "Guardar",
+  "avatar": "Avatar",
+  "chooseAvatar": "Elegir un Avatar",
+  "cancel": "Cancelar",
+  "theme": "Tema",
+  "color": "Color",
+  "language": "Idioma",
+  "light": "Claro",
+  "dark": "Oscuro"
+}

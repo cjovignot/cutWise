@@ -1,9 +1,13 @@
-import type { DashboardProps } from "../types/Globals/Pages";
+// import type { DashboardProps } from "../types/Globals/Pages";
+import { useTranslation } from "react-i18next";
 
-export default function Dashboard({ user }: DashboardProps) {
+export default function Dashboard() {
+// { user }: DashboardProps
+  const { t } = useTranslation();
+
   return (
     <>
-      <p>Bienvenue, {user.name || user.id}</p>
+      <h2>{t("dashboard")}</h2>
     </>
   );
 }

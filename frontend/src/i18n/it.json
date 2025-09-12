@@ -1,0 +1,18 @@
+{
+  "dashboard": "Cruscotto",
+  "orders": "Ordini",
+  "catalog": "Catalogo",
+  "users": "Utenti",
+  "projects": "Progetti",
+  "settings": "Impostazioni",
+  "search": "Cerca",
+  "save": "Salva",
+  "avatar": "Avatar",
+  "chooseAvatar": "Scegli un Avatar",
+  "cancel": "Annulla",
+  "theme": "Tema",
+  "color": "Colore",
+  "language": "Lingua",
+  "light": "Chiaro",
+  "dark": "Scuro"
+}

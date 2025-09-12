@@ -1,3 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 export default function Orders() {
-  return <h2 className="text-2xl font-bold">Orders</h2>;
+  const { t } = useTranslation();
+  return (
+    <>
+      <h2>{t("orders")}</h2>
+    </>
+  );
 }
