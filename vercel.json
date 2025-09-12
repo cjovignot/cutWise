@@ -1,0 +1,33 @@
+{
+  "projects": {
+    "frontend": {
+      "rootDirectory": "frontend",
+      "buildCommand": "npm run build",
+      "installCommand": "npm install",
+      "outputDirectory": "dist",
+      "framework": "vite"
+    },
+    "backend": {
+      "rootDirectory": "backend",
+      "installCommand": "npm install",
+      "buildCommand": "",
+      "framework": null,
+      "outputDirectory": ".",
+      "functions": {
+        "api/**/*.js": {
+          "runtime": "nodejs18.x"
+        }
+      }
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/backend/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/$1"
+    }
+  ]
+}
