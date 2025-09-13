@@ -25,6 +25,13 @@
   "catalog": {
     "title": "Catálogo"
   },
+  "stock": {
+    "title": "Existencias",
+    "raw_wood": "Madera en bruto",
+    "raw_wood_desc": "Stock de tablas, vigas y madera sin procesar.",
+    "scraps": "Recortes",
+    "scraps_desc": "Pequeños trozos de madera reutilizables."
+  },
   "users": "Usuarios",
   "projects": "Proyectos",
   "settings": {

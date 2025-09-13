@@ -25,6 +25,13 @@
   "catalog": {
     "title": "Catalogo"
   },
+  "stock": {
+    "title": "Azione",
+    "raw_wood": "Legno grezzo",
+    "raw_wood_desc": "Scorta di tavole, travi e legno non lavorato.",
+    "scraps": "Scarti",
+    "scraps_desc": "Piccoli pezzi di legno riutilizzabili."
+  },
   "users": "Utenti",
   "projects": "Progetti",
   "settings": {

@@ -25,6 +25,13 @@
   "catalog": {
     "title": "Catalog"
   },
+  "stock": {
+    "title": "Stock",
+    "raw_wood": "Raw wood",
+    "raw_wood_desc": "Stock of planks, beams, and unfinished wood.",
+    "scraps": "Scraps",
+    "scraps_desc": "Small reusable pieces of wood."
+  },
   "users": "Users",
   "projects": "Projects",
   "settings": {

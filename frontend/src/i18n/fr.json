@@ -25,6 +25,13 @@
   "catalog": {
     "title": "Catalogue"
   },
+  "stock": {
+    "title": "Stock",
+    "raw_wood": "Bois brut",
+    "raw_wood_desc": "Stock de planches, poutres et bois non transformés.",
+    "scraps": "Chutes",
+    "scraps_desc": "Petits morceaux de bois réutilisables."
+  },
   "users": "Utilisateurs",
   "projects": "Projets",
   "settings": {
