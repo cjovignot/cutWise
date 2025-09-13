@@ -19,7 +19,13 @@ const versionFile = path.resolve(__dirname, "../src/version.ts");
 // Contenu à écrire
 const content = `export const APP_VERSION = "${pkg.version}";\n`;
 
-// Écriture
-fs.writeFileSync(versionFile, content);
-
-console.log(`✅ version.ts mise à jour : ${pkg.version}`);
+try {
+  // Écriture
+  fs.writeFileSync(versionFile, content);
+  console.log(`✅ version.ts mise à jour : ${pkg.version}`);
+} catch (err) {
+  console.error(
+    `🚨 Impossible d'écrire dans version.ts : ${versionFile}\n`,
+    err
+  );
+}
