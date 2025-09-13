@@ -3,8 +3,8 @@
     "title": "Tableau de bord",
     "dashboard_cards": {
       "account_stats": {
-        "title": "Statistiques de compte",
-        "count_users": "Nombre d'utilisateurs"
+        "title": "Utilisateurs",
+        "count_users": "Nb d'utilisateurs"
       },
       "projects_stats": {
         "title": "Projets",

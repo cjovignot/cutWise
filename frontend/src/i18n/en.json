@@ -3,8 +3,8 @@
     "title": "Dashboard",
     "dashboard_cards": {
       "account_stats": {
-        "title": "Account Statistics",
-        "count_users": "Number of users"
+        "title": "Users",
+        "count_users": "Nb of users"
       },
       "projects_stats": {
         "title": "Projects",

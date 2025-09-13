@@ -3,7 +3,7 @@
     "title": "Tablero",
     "dashboard_cards": {
       "account_stats": {
-        "title": "Estadísticas de la cuenta",
+        "title": "Usuarios",
         "count_users": "Número de usuarios"
       },
       "projects_stats": {

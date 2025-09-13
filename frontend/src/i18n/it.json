@@ -3,7 +3,7 @@
     "title": "Cruscotto",
     "dashboard_cards": {
       "account_stats": {
-        "title": "Statistiche dell'account",
+        "title": "Utenti",
         "count_users": "Numero di utenti"
       },
       "projects_stats": {
