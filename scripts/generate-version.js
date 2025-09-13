@@ -1,16 +1,13 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
-// Chemin vers le package.json frontend
-const pkgPath = path.join(__dirname, "../frontend/package.json");
-const pkg = require(pkgPath);
+const pkgPath = path.resolve(__dirname, "../frontend/package.json");
+const versionTsPath = path.resolve(__dirname, "../frontend/src/version.ts");
 
-// Chemin vers le fichier à générer
-const targetFile = path.join(__dirname, "../frontend/src/version.ts");
+const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8"));
+const version = pkg.version || "0.0.0";
 
-const content = `// Ce fichier est généré automatiquement
-export const APP_VERSION = "${pkg.version}";
-`;
+const content = `export const APP_VERSION = "${version}";\n`;
+fs.writeFileSync(versionTsPath, content);
 
-fs.writeFileSync(targetFile, content);
-console.log(`✅ version.ts généré : ${pkg.version}`);
+console.log(`✅ version.ts généré : ${version}`);
