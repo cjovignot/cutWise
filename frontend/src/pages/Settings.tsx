@@ -4,7 +4,6 @@ import type { SettingsProps } from "../types/Globals/Pages";
 import ReactCountryFlag from "react-country-flag";
 import { useTranslation } from "react-i18next";
 import { PiCopyrightLight } from "react-icons/pi";
-import { APP_VERSION } from "../version";
 
 export default function Settings({ user }: SettingsProps) {
   const {
@@ -253,7 +252,7 @@ export default function Settings({ user }: SettingsProps) {
         <PiCopyrightLight />
         <p className="font-bold">2025</p>
       </span>
-      <p className="text-sm"> Version {APP_VERSION}</p>{" "}
+      <p className="text-sm"> Version {__APP_VERSION__}</p>{" "}
     </div>
   );
 
