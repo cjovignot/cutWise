@@ -244,13 +244,19 @@ export default function Settings({ user }: SettingsProps) {
     );
   };
 
-  // test2
+  const AppVersion = () => (
+    <div className="mb-20 text-sm text-gray-500 dark:text-gray-400">
+      Version {__APP_VERSION__}
+    </div>
+  );
+
   return (
     <div className="p-0">
       <AvatarSettings />
       <ThemeSettings />
       <ColorSettings />
       <LanguageSettings />
+      <AppVersion />
     </div>
   );
 }
