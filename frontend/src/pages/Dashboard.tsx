@@ -31,7 +31,7 @@ export default function Dashboard() {
       {/* <h2 className="mb-6 text-2xl font-bold">{t("dashboard.title")}</h2> */}
 
       {/* Grid responsive */}
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-5 md:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardHeader>
             <CardTitle>
