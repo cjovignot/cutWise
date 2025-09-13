@@ -257,12 +257,14 @@ export default function Settings({ user }: SettingsProps) {
   );
 
   return (
-    <div className="p-0">
-      <AvatarSettings />
-      <ThemeSettings />
-      <ColorSettings />
-      <LanguageSettings />
-      <AppVersion />
+    <div className="md:grid md:grid-cols-3 md:gap-4">
+      <div className="md:col-span-1 md:space-y-4">
+        <AvatarSettings />
+        <ThemeSettings />
+        <ColorSettings />
+        <LanguageSettings />
+        <AppVersion />
+      </div>
     </div>
   );
 }
