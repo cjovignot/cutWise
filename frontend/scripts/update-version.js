@@ -11,7 +11,7 @@ const pkgPath = path.resolve(__dirname, "../package.json"); // ou "./frontend/pa
 const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8"));
 
 // Chemin vers version.ts
-const versionFile = path.resolve(__dirname, "../src/version.ts"); // adapte selon ton projet
+const versionFile = path.resolve(__dirname, "./version.ts"); // adapte selon ton projet
 
 // Contenu à écrire
 const content = `export const APP_VERSION = "${pkg.version}";\n`;
