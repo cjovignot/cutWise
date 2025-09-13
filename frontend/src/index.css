@@ -46,6 +46,17 @@
   color: white;
   background: linear-gradient(54deg, rgb(36, 36, 36) 0%, rgb(60, 60, 60) 100%);
 }
+header {
+  background: linear-gradient(
+    54deg,
+    rgba(246, 248, 249, 1) 0%,
+    rgb(213, 223, 231) 100%
+  );
+}
+.dark header {
+  color: white;
+  background: linear-gradient(54deg, rgb(36, 36, 36) 0%, rgb(60, 60, 60) 100%);
+}
 
 body {
   margin: 0;

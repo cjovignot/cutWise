@@ -3,6 +3,7 @@ import { useSettings } from "../hooks/useSettings";
 import type { SettingsProps } from "../types/Globals/Pages";
 import ReactCountryFlag from "react-country-flag";
 import { useTranslation } from "react-i18next";
+import { PiCopyrightLight } from "react-icons/pi";
 
 export default function Settings({ user }: SettingsProps) {
   const {
@@ -245,8 +246,13 @@ export default function Settings({ user }: SettingsProps) {
   };
 
   const AppVersion = () => (
-    <div className="mb-20 text-sm text-gray-500 dark:text-gray-400">
-      Version {__APP_VERSION__}
+    <div className="flex flex-col items-center mt-20 mb-20 text-sm text-gray-500 dark:text-gray-400">
+      <span className="flex items-center text-md">
+        <p className="font-bold">CutWise</p>
+        <PiCopyrightLight />
+        <p className="font-bold">2025</p>
+      </span>
+      <p className="text-sm"> Version {__APP_VERSION__}</p>{" "}
     </div>
   );
 

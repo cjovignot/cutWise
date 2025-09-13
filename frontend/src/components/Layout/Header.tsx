@@ -18,7 +18,7 @@ export default function Header({
 
   return (
     <header
-      className={`flex items-center gap-2 p-4 md:py-3 w-full ${className}`}
+      className={`flex items-center gap-2 py-3 px-4 md:py-3 w-full ${className}`}
     >
       {/* Colonne 1 : titre avec icône */}
       <h2 className="items-center hidden col-span-3 text-xl font-bold md:flex md:w-full">
@@ -31,7 +31,7 @@ export default function Header({
         <input
           type="text"
           placeholder={placeholder}
-          className="w-full md:w-96 h-10 px-3 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-[var(--theme-primary)]"
+          className="w-full md:w-96 h-10 px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-[var(--theme-primary)]"
         />
       </div>
 
