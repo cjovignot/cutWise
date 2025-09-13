@@ -26,7 +26,7 @@ export default function Sidebar({ className = "" }: { className?: string }) {
             }`}
           >
             {Icon && <Icon size={20} />}
-            {t(page.label)}
+            {t(`${page.label}.title`)}
           </Link>
         );
       })}

@@ -1,10 +1,35 @@
 {
-  "dashboard": "Cruscotto",
-  "orders": "Ordini",
-  "catalog": "Catalogo",
+  "dashboard": {
+    "title": "Cruscotto",
+    "dashboard_cards": {
+      "account_stats": {
+        "title": "Statistiche dell'account",
+        "count_users": "Numero di utenti"
+      },
+      "projects_stats": {
+        "title": "Progetti",
+        "onGoingProjects": "Progetti in corso"
+      },
+      "revenue_stats": {
+        "title": "Entrate",
+        "current_month": "Questo mese"
+      },
+      "recent_activity": "Attività recente",
+      "usage_summary": "Riepilogo utilizzo",
+      "settings_shortcut": "Scorciatoia alle impostazioni"
+    }
+  },
+  "orders": {
+    "title": "Ordini"
+  },
+  "catalog": {
+    "title": "Catalogo"
+  },
   "users": "Utenti",
   "projects": "Progetti",
-  "settings": "Impostazioni",
+  "settings": {
+    "title": "Impostazioni"
+  },
   "search": "Cerca",
   "save": "Salva",
   "avatar": "Avatar",

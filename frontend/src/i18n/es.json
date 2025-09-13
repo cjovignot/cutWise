@@ -1,10 +1,35 @@
 {
-  "dashboard": "Tablero",
-  "orders": "Pedidos",
-  "catalog": "Catálogo",
+  "dashboard": {
+    "title": "Tablero",
+    "dashboard_cards": {
+      "account_stats": {
+        "title": "Estadísticas de la cuenta",
+        "count_users": "Número de usuarios"
+      },
+      "projects_stats": {
+        "title": "Proyectos",
+        "onGoingProjects": "Proyectos en curso"
+      },
+      "revenue_stats": {
+        "title": "Ingresos",
+        "current_month": "Este mes"
+      },
+      "recent_activity": "Actividad reciente",
+      "usage_summary": "Resumen de uso",
+      "settings_shortcut": "Acceso directo a la configuración"
+    }
+  },
+  "orders": {
+    "title": "Pedidos"
+  },
+  "catalog": {
+    "title": "Catálogo"
+  },
   "users": "Usuarios",
   "projects": "Proyectos",
-  "settings": "Configuración",
+  "settings": {
+    "title": "Configuración"
+  },
   "search": "Buscar",
   "save": "Guardar",
   "avatar": "Avatar",

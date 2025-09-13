@@ -2,11 +2,11 @@
 import { useTranslation } from "react-i18next";
 
 export default function Catalog() {
-// { user }: CatalogProps
+  // { user }: CatalogProps
   const { t } = useTranslation();
   return (
     <>
-      <h2>{t("catalog")}</h2>
+      <h2>{t("catalog.title")}</h2>
     </>
   );
 }

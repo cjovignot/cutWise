@@ -1,10 +1,35 @@
 {
-  "dashboard": "Tableau de bord",
-  "orders": "Commandes",
-  "catalog": "Catalogue",
+  "dashboard": {
+    "title": "Tableau de bord",
+    "dashboard_cards": {
+      "account_stats": {
+        "title": "Statistiques de compte",
+        "count_users": "Nombre d'utilisateurs"
+      },
+      "projects_stats": {
+        "title": "Projets",
+        "onGoingProjects": "Projets en cours"
+      },
+      "revenue_stats": {
+        "title": "Revenus",
+        "current_month": "Ce mois-ci"
+      },
+      "recent_activity": "Activité récente",
+      "usage_summary": "Résumé d'utilisation",
+      "settings_shortcut": "Raccourci vers les paramètres"
+    }
+  },
+  "orders": {
+    "title": "Commandes"
+  },
+  "catalog": {
+    "title": "Catalogue"
+  },
   "users": "Utilisateurs",
   "projects": "Projets",
-  "settings": "Paramètres",
+  "settings": {
+    "title": "Paramètres"
+  },
   "search": "Rechercher",
   "save": "Sauvegarder",
   "avatar": "Avatar",

@@ -3,7 +3,7 @@ import { FaBell, FaUserCircle } from "react-icons/fa";
 import type { IconType } from "react-icons";
 
 interface HeaderProps {
-  pageName?: string;
+  pageName?: object;
   icon?: IconType;
   className?: string;
 }
@@ -23,7 +23,7 @@ export default function Header({
       {/* Colonne 1 : titre avec icône */}
       <h2 className="items-center hidden col-span-3 text-xl font-bold md:flex md:w-full">
         {Icon && <Icon size={24} className="mr-2" />}
-        {t(`${pageName}`)}
+        {t(`${pageName}.title`)}
       </h2>
 
       {/* Colonne 3 : barre de recherche */}

@@ -1,10 +1,35 @@
 {
-  "dashboard": "Dashboard",
-  "orders": "Orders",
-  "catalog": "Catalog",
+  "dashboard": {
+    "title": "Dashboard",
+    "dashboard_cards": {
+      "account_stats": {
+        "title": "Account Statistics",
+        "count_users": "Number of users"
+      },
+      "projects_stats": {
+        "title": "Projects",
+        "onGoingProjects": "Ongoing Projects"
+      },
+      "revenue_stats": {
+        "title": "Revenue",
+        "current_month": "This Month"
+      },
+      "recent_activity": "Recent Activity",
+      "usage_summary": "Usage Summary",
+      "settings_shortcut": "Settings Shortcut"
+    }
+  },
+  "orders": {
+    "title": "Orders"
+  },
+  "catalog": {
+    "title": "Catalog"
+  },
   "users": "Users",
   "projects": "Projects",
-  "settings": "Settings",
+  "settings": {
+    "title": "Settings"
+  },
   "search": "Search",
   "save": "Save",
   "avatar": "Avatar",

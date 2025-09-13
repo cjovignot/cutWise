@@ -225,7 +225,7 @@ export default function Settings({ user }: SettingsProps) {
               }
               countryCode={lang.countryCode}
               svg
-              className={`rounded-lg border-2 transition-all duration-200`}
+              className={`rounded-lg border-2 transition-all duration-200 hover:cursor-pointer`}
               style={{
                 width: "auto",
                 height: "32px",
