@@ -9,6 +9,7 @@ export default function Sidebar({ className = "" }: { className?: string }) {
 
   return (
     <aside
+      id="sidebar"
       className={`${className} w-64 p-6 flex flex-col h-screen overflow-y-auto`}
     >
       <div className="flex p-4 mb-8 text-3xl card-title">CutWise</div>
@@ -21,8 +22,10 @@ export default function Sidebar({ className = "" }: { className?: string }) {
           <Link
             key={page.path}
             to={page.path}
-            className={`my-1 flex items-center gap-2 py-2 px-4 rounded-lg hover:bg-sky-900/10 dark:hover:bg-white/60 transition-colors ${
-              isActive ? "bg-sky-900/10 dark:bg-white/60 font-semibold" : ""
+            className={`my-1 flex items-center gap-2 py-2 px-4 rounded-lg hover:bg-(--theme-primary)/20 dark:hover:bg-(--theme-primary)/20 dark:hover:text-white transition-colors ${
+              isActive
+                ? "bg-(--theme-primary)/40 dark:bg-(--theme-primary)/40 dark:text-white font-semibold"
+                : ""
             }`}
           >
             {Icon && <Icon size={20} />}
