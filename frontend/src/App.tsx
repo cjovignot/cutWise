@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
-import Dashboard from "./pages/Dashboard";
-import Orders from "./pages/Orders";
-import Catalog from "./pages/Catalog";
-import Settings from "./pages/Settings";
-import type { User } from "./types/Globals/User";
-import { useInitPreferences } from "./hooks/useInitPreferences";
+import Layout from "@/components/layout/Layout";
+import Dashboard from "@/pages/Dashboard";
+import Orders from "@/pages/Orders";
+import Catalog from "@/pages/Catalog";
+import Settings from "@/pages/Settings";
+import type { User } from "@/types/Globals/User";
+import { useInitPreferences } from "@/hooks/useInitPreferences";
 
 function App() {
   useInitPreferences();
