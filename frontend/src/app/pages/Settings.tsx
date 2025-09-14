@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ReactCountryFlag from "react-country-flag";
 import { useTranslation } from "react-i18next";
 import { PiCopyrightLight } from "react-icons/pi";
-import type { SettingsProps } from "@/types/Globals/Pages";
+import type { SettingsProps } from "@/types/Settings";
 import { useSettings } from "@/hooks/useSettings";
 
 export default function Settings({ user }: SettingsProps) {

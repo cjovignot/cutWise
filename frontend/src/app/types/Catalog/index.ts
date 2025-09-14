@@ -1,5 +1,5 @@
 import type { User } from "@/types/Globals/User";
 
-export interface CatalogProps {
+export interface StockProps {
   user: User;
 }

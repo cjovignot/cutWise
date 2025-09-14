@@ -31,7 +31,7 @@ export default function Dashboard() {
       {/* <h2 className="mb-6 text-2xl font-bold">{t("dashboard.title")}</h2> */}
 
       {/* Grid responsive */}
-      <div className="grid grid-cols-2 gap-5 md:grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
         <Card>
           <CardHeader>
             <CardTitle>
@@ -60,6 +60,22 @@ export default function Dashboard() {
           <CardFooter>
             <p className="text-muted-foreground">
               {t("dashboard.dashboard_cards.projects_stats.onGoingProjects")}
+            </p>
+          </CardFooter>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>
+              {t("dashboard.dashboard_cards.revenue_stats.title")}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-3xl font-bold">12,34 €</p>
+          </CardContent>
+          <CardFooter>
+            <p className="text-muted-foreground">
+              {t("dashboard.dashboard_cards.revenue_stats.current_month")}
             </p>
           </CardFooter>
         </Card>

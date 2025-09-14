@@ -22,9 +22,6 @@
   "orders": {
     "title": "Ordini"
   },
-  "catalog": {
-    "title": "Catalogo"
-  },
   "stock": {
     "title": "Azione",
     "raw_wood": "Legno grezzo",

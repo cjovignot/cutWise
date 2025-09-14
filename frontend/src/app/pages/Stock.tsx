@@ -1,9 +1,5 @@
 import { useTranslation } from "react-i18next";
-
-type StockCardProps = {
-  title: string;
-  description: string;
-};
+import type { StockCardProps } from "@/features/Stock/types";
 
 function StockCard({ title, description }: StockCardProps) {
   return (
@@ -14,7 +10,7 @@ function StockCard({ title, description }: StockCardProps) {
   );
 }
 
-export default function Catalog() {
+export default function Stock() {
   const { t } = useTranslation();
 
   return (

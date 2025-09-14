@@ -22,9 +22,6 @@
   "orders": {
     "title": "Orders"
   },
-  "catalog": {
-    "title": "Catalog"
-  },
   "stock": {
     "title": "Stock",
     "raw_wood": "Raw wood",

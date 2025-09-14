@@ -14,7 +14,7 @@ export default function BottomNavigation({
   const sections = [
     { label: t("dashboard.title"), path: "/", icon: <RxDashboard size={20} /> },
     { label: t("orders"), path: "/orders", icon: <FaShoppingCart size={20} /> },
-    { label: t("catalog"), path: "/catalog", icon: <FaBoxOpen size={20} /> },
+    { label: t("stock"), path: "/stock", icon: <FaBoxOpen size={20} /> },
     { label: t("settings"), path: "/settings", icon: <FaCog size={20} /> },
   ];
 

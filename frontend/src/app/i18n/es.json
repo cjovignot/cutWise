@@ -22,9 +22,6 @@
   "orders": {
     "title": "Pedidos"
   },
-  "catalog": {
-    "title": "Catálogo"
-  },
   "stock": {
     "title": "Existencias",
     "raw_wood": "Madera en bruto",

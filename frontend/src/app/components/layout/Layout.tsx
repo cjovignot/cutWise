@@ -1,13 +1,9 @@
-import type { ReactNode } from "react";
 import { useLocation } from "react-router-dom";
 import Sidebar from "./SideBar";
 import BottomNavigation from "./BottomNavigation";
 import Header from "./Header";
 import { pages } from "@/utils/iconsMap";
-
-interface LayoutProps {
-  children: ReactNode;
-}
+import type { LayoutProps } from "@/types/Globals/Layout";
 
 export default function Layout({ children }: LayoutProps) {
   const location = useLocation();

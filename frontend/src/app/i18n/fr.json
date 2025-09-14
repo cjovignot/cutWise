@@ -22,9 +22,6 @@
   "orders": {
     "title": "Commandes"
   },
-  "catalog": {
-    "title": "Catalogue"
-  },
   "stock": {
     "title": "Stock",
     "raw_wood": "Bois brut",

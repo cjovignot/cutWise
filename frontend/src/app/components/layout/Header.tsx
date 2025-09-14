@@ -1,12 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { FaBell, FaUserCircle } from "react-icons/fa";
-import type { IconType } from "react-icons";
-
-interface HeaderProps {
-  pageName?: object;
-  icon?: IconType;
-  className?: string;
-}
+import type { HeaderProps } from "@/types/Globals/Layout";
 
 export default function Header({
   pageName,
