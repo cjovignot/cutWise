@@ -1,7 +1,13 @@
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { RxDashboard } from "react-icons/rx";
-import { FaBoxOpen, FaCog, FaShoppingCart } from "react-icons/fa";
+import {
+  FaBoxOpen,
+  FaCog,
+  // FaShoppingCart,
+  FaFolder,
+  FaStore,
+} from "react-icons/fa";
 
 export default function BottomNavigation({
   className = "",
@@ -13,7 +19,8 @@ export default function BottomNavigation({
 
   const sections = [
     { label: t("dashboard.title"), path: "/", icon: <RxDashboard size={20} /> },
-    { label: t("orders"), path: "/orders", icon: <FaShoppingCart size={20} /> },
+    { label: t("projects"), path: "/projects", icon: <FaFolder size={20} /> },
+    { label: t("stores"), path: "/stores", icon: <FaStore size={20} /> },
     { label: t("stock"), path: "/stock", icon: <FaBoxOpen size={20} /> },
     { label: t("settings"), path: "/settings", icon: <FaCog size={20} /> },
   ];

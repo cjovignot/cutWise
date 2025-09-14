@@ -1,5 +1,5 @@
 import type { User } from "../Globals/User";
 
-export interface OrdersProps {
+export interface StoresProps {
   user: User;
 }

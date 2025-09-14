@@ -19,8 +19,14 @@
       "settings_shortcut": "Scorciatoia alle impostazioni"
     }
   },
+  "money": {
+    "unit": "€"
+  },
   "orders": {
     "title": "Ordini"
+  },
+  "stores": {
+    "title": "Negozi"
   },
   "stock": {
     "title": "Azione",
@@ -30,7 +36,25 @@
     "scraps_desc": "Piccoli pezzi di legno riutilizzabili."
   },
   "users": "Utenti",
-  "projects": "Progetti",
+  "projects": {
+    "title": "Progetti",
+    "cards": {
+      "add_project": {
+        "title": "Aggiungi progetto",
+        "header": "Crea progetto",
+        "content": "Clicca per creare un progetto",
+        "footer": "Pulsanti di azione"
+      }
+    }
+  },
+  "analyze_3D": {
+    "cards": {
+      "title": "Modello 3D",
+      "header": "Modello 3D",
+      "content": "Ottieni l'elenco dei componenti del tuo modello 3D",
+      "footer": "Pulsante azione"
+    }
+  },
   "settings": {
     "title": "Impostazioni"
   },

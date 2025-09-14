@@ -19,8 +19,14 @@
       "settings_shortcut": "Settings Shortcut"
     }
   },
+  "money": {
+    "unit": "£"
+  },
   "orders": {
     "title": "Orders"
+  },
+  "stores": {
+    "title": "Stores"
   },
   "stock": {
     "title": "Stock",
@@ -30,7 +36,25 @@
     "scraps_desc": "Small reusable pieces of wood."
   },
   "users": "Users",
-  "projects": "Projects",
+  "projects": {
+    "title": "Projects",
+    "cards": {
+      "add_project": {
+        "title": "Add project",
+        "header": "Create project",
+        "content": "Click to create a project",
+        "footer": "Action buttons"
+      }
+    }
+  },
+  "analyze_3D": {
+    "cards": {
+      "title": "3D Model",
+      "header": "3D Model",
+      "content": "Get the list of parts from your 3D model",
+      "footer": "Action button"
+    }
+  },
   "settings": {
     "title": "Settings"
   },

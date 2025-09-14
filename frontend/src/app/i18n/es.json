@@ -19,8 +19,14 @@
       "settings_shortcut": "Acceso directo a la configuración"
     }
   },
+  "money": {
+    "unit": "€"
+  },
   "orders": {
     "title": "Pedidos"
+  },
+  "stores": {
+    "title": "Víveres"
   },
   "stock": {
     "title": "Existencias",
@@ -30,7 +36,25 @@
     "scraps_desc": "Pequeños trozos de madera reutilizables."
   },
   "users": "Usuarios",
-  "projects": "Proyectos",
+  "projects": {
+    "title": "Proyectos",
+    "cards": {
+      "add_project": {
+        "title": "Agregar proyecto",
+        "header": "Crear proyecto",
+        "content": "Haz clic para crear un proyecto",
+        "footer": "Botones de acción"
+      }
+    }
+  },
+  "analyze_3D": {
+    "cards": {
+      "title": "Modelo 3D",
+      "header": "Modelo 3D",
+      "content": "Obtén la lista de piezas de tu modelo 3D",
+      "footer": "Botón de acción"
+    }
+  },
   "settings": {
     "title": "Configuración"
   },
