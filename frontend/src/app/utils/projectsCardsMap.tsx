@@ -1,7 +1,7 @@
 import { IoArrowForward } from "react-icons/io5";
-import { ProjectCardKey } from "@/types/Globals/Cards";
+import { CardKeys } from "@/types/Globals/Cards";
 
-export const projectCardKeys: ProjectCardKey[] = [
+export const projectCardKeys: CardKeys[] = [
   {
     title: "projects.cards.add_project.title",
     header: "projects.cards.add_project.header",
@@ -12,6 +12,7 @@ export const projectCardKeys: ProjectCardKey[] = [
         <IoArrowForward className="text-2xl text-gray-200" />
       </div>
     ),
+    link: "/addProject",
   },
   {
     title: "analyze_3D.cards.title",
@@ -23,5 +24,6 @@ export const projectCardKeys: ProjectCardKey[] = [
         <IoArrowForward className="text-2xl text-gray-200" />
       </div>
     ),
+    link: "/3Danalyzer",
   },
 ];

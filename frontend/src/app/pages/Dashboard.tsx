@@ -12,17 +12,18 @@ export default function Dashboard() {
 
   // On mappe les clés pour obtenir directement les textes traduits
   const dashboardCards = dashboardCardKeys.map((card) => ({
-    title: t(card.title),
-    header: t(card.header),
-    content: t(card.content),
-    footer: t(card.footer),
-    value: card.value ?? null, // optionnel si certaines cartes ont des valeurs dynamiques
+    title: card.title ? t(card.title) : undefined,
+    header: card.header ? t(card.header) : undefined,
+    content: card.content ? t(card.content) : undefined,
+    footer: typeof card.footer === "string" ? t(card.footer) : card.footer,
+    value: card.value ? card.value : undefined,
+    link: card.link ? card.link : undefined,
   }));
 
   return (
     <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
       {dashboardCards.map((card, index) => (
-        <Card key={index}>
+        <Card link={card.link} key={index}>
           <CardTitle>{card.title}</CardTitle>
           <CardContent>
             {card.value ? (

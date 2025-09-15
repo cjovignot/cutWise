@@ -1,6 +1,6 @@
-import { DashboardCardsKey } from "@/types/Globals/Cards";
+import { CardKeys } from "@/types/Globals/Cards";
 
-export const dashboardCardKeys: DashboardCardsKey[] = [
+export const dashboardCardKeys: CardKeys[] = [
   {
     header: "",
     title: "dashboard.dashboard_cards.account_stats.title",
@@ -14,6 +14,7 @@ export const dashboardCardKeys: DashboardCardsKey[] = [
     content: "",
     footer: "dashboard.dashboard_cards.projects_stats.onGoingProjects",
     value: 45,
+    link: "/projects",
   },
   {
     header: "",
