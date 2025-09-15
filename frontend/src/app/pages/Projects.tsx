@@ -7,7 +7,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { projectCardKeys } from "@/utils/projectsCardsMap";
 import { ProjectsProps } from "@/types/Projects";
-
+// test script
 export default function Projects({ user }: ProjectsProps) {
   const { t } = useTranslation();
 
