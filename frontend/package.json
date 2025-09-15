@@ -4,8 +4,6 @@
   "version": "0.7.0",
   "type": "module",
   "scripts": {
-    "restructure-lang": "node scripts/restructure-lang.js",
-    "prepare": "npm run restructure-lang",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
