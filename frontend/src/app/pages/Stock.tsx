@@ -3,9 +3,12 @@ import type { StockCardProps } from "@/features/Stock/types";
 
 function StockCard({ title, description }: StockCardProps) {
   return (
-    <div className="flex flex-col p-4 bg-white border shadow rounded-2xl">
-      <h3 className="mb-2 text-lg font-semibold">{title}</h3>
-      <p className="text-sm text-gray-600">{description}</p>
+    <div className="flex flex-col justify-between p-4 transition duration-200 bg-white shadow hover:bg-white/0 dark:hover:bg-white/10 hover:cursor-pointer min-h-20 dark:bg-white/20 rounded-3xl">
+      <h3 className="mb-2 text-lg font-semibold"> {title ?? { title }}</h3>
+      <p className="text-xs text-gray-600 dark:text-white">
+        {" "}
+        {description ?? { description }}
+      </p>
     </div>
   );
 }
@@ -15,7 +18,7 @@ export default function Stock() {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-xl font-bold">{t("stock.title")}</h2>
+      {/* <h2 className="text-xl font-bold">{t("stock.title")}</h2> */}
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <StockCard
           title={t("stock.raw_wood")}

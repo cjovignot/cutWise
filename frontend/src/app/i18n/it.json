@@ -16,7 +16,7 @@
       },
       "recent_activity": "Attività recente",
       "usage_summary": "Riepilogo utilizzo",
-      "settings_shortcut": "Scorciatoia alle impostazioni"
+      "settings_shortcut": "Scorciatoia impostazioni"
     }
   },
   "money": {
@@ -29,29 +29,25 @@
     "title": "Negozi"
   },
   "stock": {
-    "title": "Azione",
+    "title": "Magazzino",
     "raw_wood": "Legno grezzo",
-    "raw_wood_desc": "Scorta di tavole, travi e legno non lavorato.",
+    "raw_wood_desc": "Scorte di tavole, travi e legno non lavorato.",
     "scraps": "Scarti",
     "scraps_desc": "Piccoli pezzi di legno riutilizzabili."
   },
   "users": "Utenti",
   "projects": {
     "title": "Progetti",
-    "cards": {
-      "add_project": {
-        "title": "Aggiungi progetto",
-        "header": "Crea progetto",
-        "content": "Clicca per creare un progetto",
-        "footer": "Pulsanti di azione"
-      }
-    }
-  },
-  "analyze_3D": {
-    "cards": {
+    "addProject": {
+      "title": "Aggiungi un progetto",
+      "header": "Crea un progetto",
+      "content": "Clicca per creare un progetto",
+      "footer": "Pulsante azione"
+    },
+    "analyzer3D": {
       "title": "Modello 3D",
       "header": "Modello 3D",
-      "content": "Ottieni l'elenco dei componenti del tuo modello 3D",
+      "content": "Ottieni la lista delle parti del tuo modello 3D",
       "footer": "Pulsante azione"
     }
   },

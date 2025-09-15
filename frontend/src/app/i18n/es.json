@@ -26,29 +26,25 @@
     "title": "Pedidos"
   },
   "stores": {
-    "title": "Víveres"
+    "title": "Tiendas"
   },
   "stock": {
-    "title": "Existencias",
-    "raw_wood": "Madera en bruto",
-    "raw_wood_desc": "Stock de tablas, vigas y madera sin procesar.",
+    "title": "Inventario",
+    "raw_wood": "Madera cruda",
+    "raw_wood_desc": "Inventario de tablones, vigas y madera sin procesar.",
     "scraps": "Recortes",
     "scraps_desc": "Pequeños trozos de madera reutilizables."
   },
   "users": "Usuarios",
   "projects": {
     "title": "Proyectos",
-    "cards": {
-      "add_project": {
-        "title": "Agregar proyecto",
-        "header": "Crear proyecto",
-        "content": "Haz clic para crear un proyecto",
-        "footer": "Botones de acción"
-      }
-    }
-  },
-  "analyze_3D": {
-    "cards": {
+    "addProject": {
+      "title": "Agregar un proyecto",
+      "header": "Crear un proyecto",
+      "content": "Haz clic para crear un proyecto",
+      "footer": "Botón de acción"
+    },
+    "analyzer3D": {
       "title": "Modelo 3D",
       "header": "Modelo 3D",
       "content": "Obtén la lista de piezas de tu modelo 3D",

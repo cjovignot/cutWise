@@ -1,23 +1,23 @@
 import { useLocation } from "react-router-dom";
-import Sidebar from "./SideBar";
-import BottomNavigation from "./BottomNavigation";
+import { Sidebar, BottomNavigation } from "./Navigation";
 import Header from "./Header";
-import { pages } from "@/utils/iconsMap";
+import { pages } from "@/utils/iconsNavigationMap";
 import type { LayoutProps } from "@/types/Globals/Layout";
 
 export default function Layout({ children }: LayoutProps) {
   const location = useLocation();
 
-  const pageName =
-    pages.find((p) => p.path === location.pathname)?.label || "dashboard";
+  // const pageName = pages.find((p) => p.path === location.pathname)?.label;
   const pageIcon = pages.find((p) => p.path === location.pathname)?.icon;
+
+  const pathname = location.pathname === "/" ? "dashboard" : location.pathname;
+  const segments = pathname?.split("/").filter((segment) => segment !== "");
+  const pageName = segments?.join(".");
 
   return (
     <div className="flex w-full h-screen bg-gray-50 dark:bg-gray-900">
       {/* Sidebar fixe à gauche */}
-      <div className="fixed top-0 left-0 hidden w-64 h-screen lg:flex">
-        <Sidebar className="w-64" />
-      </div>
+      <Sidebar className="w-64" />
 
       {/* Zone principale décalée */}
       <div className="flex flex-col flex-1 w-full h-screen lg:ml-64">
@@ -32,7 +32,7 @@ export default function Layout({ children }: LayoutProps) {
         </main>
 
         {/* Navigation mobile en bas */}
-        <BottomNavigation className="lg:hidden" />
+        <BottomNavigation />
       </div>
     </div>
   );

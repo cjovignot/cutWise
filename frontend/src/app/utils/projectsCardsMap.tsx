@@ -3,27 +3,27 @@ import { CardKeys } from "@/types/Globals/Cards";
 
 export const projectCardKeys: CardKeys[] = [
   {
-    title: "projects.cards.add_project.title",
-    header: "projects.cards.add_project.header",
-    content: "projects.cards.add_project.content",
-    // footer: "projects.cards.add_project.footer",
+    title: "projects.addProject.title",
+    header: "projects.addProject.header",
+    content: "projects.addProject.content",
+    // footer: "projects.addProject.footer",
     footer: (
       <div className="flex justify-end w-full">
         <IoArrowForward className="text-2xl text-gray-200" />
       </div>
     ),
-    link: "/addProject",
+    link: "/projects/addProject",
   },
   {
-    title: "analyze_3D.cards.title",
-    header: "analyze_3D.cards.header",
-    content: "analyze_3D.cards.content",
-    // footer: "analyze_3D.cards.footer",
+    title: "projects.analyzer3D.title",
+    header: "projects.analyzer3D.header",
+    content: "projects.analyzer3D.content",
+    // footer: "analyzer3D.footer",
     footer: (
       <div className="flex justify-end w-full">
         <IoArrowForward className="text-2xl text-gray-200" />
       </div>
     ),
-    link: "/3Danalyzer",
+    link: "/projects/analyzer3D",
   },
 ];

@@ -36,26 +36,21 @@
     "scraps_desc": "Petits morceaux de bois réutilisables."
   },
   "users": "Utilisateurs",
-  "analyze_3D": {
-    "cards": {
+  "projects": {
+    "title": "Projets",
+    "addProject": {
+      "title": "Ajouter un projet",
+      "header": "Créer un projet",
+      "content": "Cliquez pour créer un projet",
+      "footer": "Bouton action"
+    },
+    "analyzer3D": {
       "title": "Modèle 3D",
       "header": "Modèle 3D",
       "content": "Obtenez la liste des pièces de votre modèle 3D",
       "footer": "Bouton action"
     }
   },
-  "projects": {
-    "title": "Projets",
-    "cards": {
-      "add_project": {
-        "title": "Ajouter un projet",
-        "header": "Créer un projet",
-        "content": "Cliquez pour créer un projet",
-        "footer": "Bouton action"
-      }
-    }
-  },
-
   "settings": {
     "title": "Paramètres"
   },

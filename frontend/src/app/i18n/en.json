@@ -4,23 +4,23 @@
     "dashboard_cards": {
       "account_stats": {
         "title": "Users",
-        "count_users": "Nb of users"
+        "count_users": "Number of users"
       },
       "projects_stats": {
         "title": "Projects",
-        "onGoingProjects": "Ongoing Projects"
+        "onGoingProjects": "Ongoing projects"
       },
       "revenue_stats": {
         "title": "Revenue",
-        "current_month": "This Month"
+        "current_month": "This month"
       },
-      "recent_activity": "Recent Activity",
-      "usage_summary": "Usage Summary",
-      "settings_shortcut": "Settings Shortcut"
+      "recent_activity": "Recent activity",
+      "usage_summary": "Usage summary",
+      "settings_shortcut": "Settings shortcut"
     }
   },
   "money": {
-    "unit": "£"
+    "unit": "€"
   },
   "orders": {
     "title": "Orders"
@@ -31,27 +31,23 @@
   "stock": {
     "title": "Stock",
     "raw_wood": "Raw wood",
-    "raw_wood_desc": "Stock of planks, beams, and unfinished wood.",
+    "raw_wood_desc": "Stock of boards, beams, and unprocessed wood.",
     "scraps": "Scraps",
     "scraps_desc": "Small reusable pieces of wood."
   },
   "users": "Users",
   "projects": {
     "title": "Projects",
-    "cards": {
-      "add_project": {
-        "title": "Add project",
-        "header": "Create project",
-        "content": "Click to create a project",
-        "footer": "Action buttons"
-      }
-    }
-  },
-  "analyze_3D": {
-    "cards": {
+    "addProject": {
+      "title": "Add a project",
+      "header": "Create a project",
+      "content": "Click to create a project",
+      "footer": "Action button"
+    },
+    "analyzer3D": {
       "title": "3D Model",
       "header": "3D Model",
-      "content": "Get the list of parts from your 3D model",
+      "content": "Get the list of parts of your 3D model",
       "footer": "Action button"
     }
   },
