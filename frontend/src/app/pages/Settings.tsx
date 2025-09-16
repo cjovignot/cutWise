@@ -146,26 +146,33 @@ export default function Settings({ user }: SettingsProps) {
   };
 
   // Composant Thème
-  const ThemeSettings = () => (
-    <div className="mb-10">
-      <h3 className="mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
-        {t("theme")}
-      </h3>
-      <div className="grid grid-cols-2 gap-2">
-        {["light", "dark"].map((m) => (
+  const ThemeSettings = () => {
+    const toggleMode = () => {
+      const newMode = mode === "light" ? "dark" : "light";
+      setMode(newMode);
+      localStorage.setItem("theme-mode", newMode);
+    };
+
+    return (
+      <div className="mb-10">
+        <h3 className="font-semibold border-b border-gray-700 fmb-2 dark:border-gray-200">
+          {t("theme")}
+        </h3>
+        <div className="flex justify-between w-full p-3">
+          <span>{mode}</span>
           <button
-            key={m}
-            onClick={() => setMode(m as "light" | "dark")}
-            className={`px-4 py-2 rounded  dark:text-gray-300 ${
-              mode === m ? "bg-(--theme-primary)/20" : "bg-white/0"
-            }`}
+            onClick={toggleMode}
+            className="relative flex items-center w-10 h-6 transition-colors bg-gray-300 !rounded-full dark:bg-gray-600"
           >
-            {m === "light" ? `☀️ ${t("light")}` : `🌙 ${t("dark")}`}
+            <span
+              className={`absolute left-1 top-1 w-4 h-4 rounded-full bg-white shadow-md transform transition-transform
+            ${mode === "dark" ? "translate-x-4" : "translate-x-0"}`}
+            />
           </button>
-        ))}
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   // Composant Couleur
   const ColorSettings = () => (
@@ -173,14 +180,14 @@ export default function Settings({ user }: SettingsProps) {
       <h3 className="mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
         {t("color")}
       </h3>
-      <div className="grid grid-cols-8 gap-1">
+      <div className="grid grid-cols-5 gap-1">
         {themes.map((t) => (
           <button
             key={t.id}
             onClick={() => {
               setColor(t.id);
             }}
-            className={`w-8 h-8 rounded-full border-2`}
+            className="w-14 h-6 border-2 !rounded-sm"
             style={{
               backgroundColor: t.primary,
               borderWidth:
@@ -216,7 +223,7 @@ export default function Settings({ user }: SettingsProps) {
         <h3 className="mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
           {t("language")}
         </h3>
-        <div className="grid grid-cols-7 gap-1">
+        <div className="grid grid-cols-8 gap-1">
           {languages.map((lang) => (
             <ReactCountryFlag
               key={lang.code}
@@ -225,10 +232,10 @@ export default function Settings({ user }: SettingsProps) {
               }
               countryCode={lang.countryCode}
               svg
-              className={`rounded-lg border-2 transition-all duration-200 hover:cursor-pointer`}
+              className="transition-all duration-200 border-2 rounded-sm hover:cursor-pointer"
               style={{
                 width: "auto",
-                height: "32px",
+                height: "30px",
                 borderColor:
                   language === lang.code
                     ? mode === "dark"

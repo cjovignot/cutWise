@@ -19,7 +19,7 @@ export default function Stock() {
   return (
     <div className="space-y-6">
       {/* <h2 className="text-xl font-bold">{t("stock.title")}</h2> */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-3">
         <StockCard
           title={t("stock.raw_wood")}
           description={t("stock.raw_wood_desc")}
