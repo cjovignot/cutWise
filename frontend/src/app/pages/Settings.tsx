@@ -69,9 +69,6 @@ export default function Settings({ user }: SettingsProps) {
 
   // Composant Avatar
   const AvatarSettings = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [isClosing, setIsClosing] = useState(false);
-
     // Charger l'avatar depuis localStorage au montage
     useEffect(() => {
       const savedAvatar = localStorage.getItem("selectedAvatar");
@@ -81,66 +78,37 @@ export default function Settings({ user }: SettingsProps) {
       }
     }, []);
 
-    const closeModal = () => {
-      setIsClosing(true);
-      setTimeout(() => {
-        setIsModalOpen(false);
-        setIsClosing(false);
-      }, 300);
-    };
-
     const handleSelectAvatar = (src: string) => {
       setSelectedAvatar(src);
       setAvatarUrl(src); // mise à jour globale
       localStorage.setItem("selectedAvatar", src); // sauvegarde locale
-      setIsModalOpen(false);
     };
 
     return (
-      <div className="mb-10">
-        <h3 className="mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
+      <div className="mb-5">
+        <h3 className="pb-1 mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
           {t("avatar")}
         </h3>
-        <div className="flex justify-center">
+        <div className="flex">
           <img
             src={selectedAvatar || avatarUrl || avatarLibrary[0]}
-            className="mt-4 border-2 border-gray-300 rounded-full cursor-pointer w-30 h-30"
-            onClick={() => setIsModalOpen(true)}
+            className="mt-4 border-2 border-gray-300 rounded-lg cursor-pointer w-30 h-30"
             title={t("selectAvatar")}
           />
-        </div>
 
-        {isModalOpen && (
-          <div
-            className={`fixed inset-0 z-50 flex items-center justify-center bg-black/30 transition-opacity duration-300 ${
-              isClosing ? "opacity-0" : "opacity-100"
-            }`}
-            onClick={closeModal}
-          >
-            <div
-              className={`w-full max-w-lg p-4 px-10 m-4 bg-white dark:bg-gray-900 rounded-lg transform transition-transform duration-300 ${
-                isClosing
-                  ? "scale-95 opacity-0"
-                  : "scale-100 opacity-100 animate-modal-in"
-              }`}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <h3 className="mb-2 font-semibold">{t("chooseAvatar")}</h3>
-              <div className="grid grid-cols-4 gap-1 md:grid-cols-5 md:gap-1 md:max-h-60">
-                {avatarLibrary.map((src) => (
-                  <div className="flex justify-center" key={src}>
-                    <img
-                      src={src}
-                      className="w-12 h-12 rounded-full cursor-pointer border-2 border-transparent hover:border-(--theme-primary) transition-all duration-200"
-                      onClick={() => handleSelectAvatar(src)}
-                      title={t("selectAvatar")}
-                    />
-                  </div>
-                ))}
+          <div className="grid grid-cols-4 gap-1 p-4 md:grid-cols-10 md:gap-2">
+            {avatarLibrary.map((src) => (
+              <div className="flex justify-center" key={src}>
+                <img
+                  src={src}
+                  className="w-12 h-12 rounded-lg cursor-pointer border-2 border-transparent hover:border-(--theme-primary) transition-all duration-200"
+                  onClick={() => handleSelectAvatar(src)}
+                  title={t("selectAvatar")}
+                />
               </div>
-            </div>
+            ))}
           </div>
-        )}
+        </div>
       </div>
     );
   };
@@ -154,19 +122,16 @@ export default function Settings({ user }: SettingsProps) {
     };
 
     return (
-      <div className="mb-10">
-        <h3 className="font-semibold border-b border-gray-700 fmb-2 dark:border-gray-200">
-          {t("theme")}
-        </h3>
-        <div className="flex justify-between w-full p-3">
-          <span>{mode}</span>
+      <div className="mb-5">
+        <div className="flex items-end justify-between w-full pb-1 mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
+          <h3>{t("theme")}</h3>
           <button
             onClick={toggleMode}
-            className="relative flex items-center w-10 h-6 transition-colors bg-gray-300 !rounded-full dark:bg-gray-600"
+            className="relative flex items-center w-13 h-7 transition-colors bg-gray-300 dark:bg-green-600 !rounded-full dark:bg-gray-600"
           >
             <span
-              className={`absolute left-1 top-1 w-4 h-4 rounded-full bg-white shadow-md transform transition-transform
-            ${mode === "dark" ? "translate-x-4" : "translate-x-0"}`}
+              className={`absolute left-1 top-1 w-5 h-5 rounded-full bg-white shadow-md transform transition-transform
+            ${mode === "dark" ? "translate-x-5.5" : "translate-x-0"}`}
             />
           </button>
         </div>
@@ -176,8 +141,8 @@ export default function Settings({ user }: SettingsProps) {
 
   // Composant Couleur
   const ColorSettings = () => (
-    <div className="mb-10">
-      <h3 className="mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
+    <div className="mb-5">
+      <h3 className="pb-1 mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
         {t("color")}
       </h3>
       <div className="grid grid-cols-5 gap-1">
@@ -187,7 +152,7 @@ export default function Settings({ user }: SettingsProps) {
             onClick={() => {
               setColor(t.id);
             }}
-            className="w-14 h-6 border-2 !rounded-sm"
+            className="w-14 sm:w-10 lg:w-16 h-6 border-2 !rounded-sm"
             style={{
               backgroundColor: t.primary,
               borderWidth:
@@ -219,8 +184,8 @@ export default function Settings({ user }: SettingsProps) {
     ];
 
     return (
-      <div className="mb-10">
-        <h3 className="mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
+      <div className="mb-5">
+        <h3 className="pb-1 mb-2 font-semibold border-b border-gray-700 dark:border-gray-200">
           {t("language")}
         </h3>
         <div className="grid grid-cols-8 gap-1">
@@ -265,7 +230,7 @@ export default function Settings({ user }: SettingsProps) {
 
   return (
     <div className="md:grid md:grid-cols-3 md:gap-4">
-      <div className="md:col-span-1 md:space-y-4">
+      <div className="md:col-span-3 md:space-y-4">
         <AvatarSettings />
         <ThemeSettings />
         <ColorSettings />
