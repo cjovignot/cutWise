@@ -130,7 +130,7 @@ export default function Settings({ user }: SettingsProps) {
             className="relative flex items-center w-13 h-7 transition-colors bg-gray-300 dark:bg-green-600 !rounded-full dark:bg-gray-600"
           >
             <span
-              className={`absolute left-1 top-1 w-5 h-5 rounded-full bg-white shadow-md transform transition-transform
+              className={`relative left-1 top-0 w-5 h-5 rounded-full bg-white shadow-md transform transition-transform
             ${mode === "dark" ? "translate-x-5.5" : "translate-x-0"}`}
             />
           </button>
